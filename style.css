@@ -375,6 +375,9 @@ footer p a {
   main #works #works_list li {
     width: 100%;
   }
+  main #works #works_list li p {
+    text-align: left;
+  }
   main #works .slider {
     width: 80vw;
   }
