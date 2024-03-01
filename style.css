@@ -1,0 +1,390 @@
+html {
+  font-size: 62.5%;
+  /* 16px * 62.5% = 10px */
+  -moz-text-size-adjust: 100%;
+       text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; /* Safari */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body h1, body h2 {
+  font-family: "Josefin Sans", sans-serif, "NoChattering";
+  letter-spacing: 0.05em;
+  line-height: 100%;
+  font-weight: 400;
+}
+body h3, body h4, body p {
+  font-family: "Noto Sans JP", sans-serif, "NoChattering";
+  letter-spacing: 0.05em;
+  line-height: 200%;
+  color: #4e454a;
+  margin: 1em;
+}
+body h2 {
+  font-size: 6.4rem;
+}
+body h3 {
+  font-size: 1.8rem;
+}
+body h4 {
+  font-size: 1.6rem;
+}
+body p {
+  font-size: 1.6rem;
+}
+body ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.6rem;
+}
+body a {
+  color: #4e454a;
+}
+
+.hero {
+  width: 100%;
+  height: calc(100vh + 100px);
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgba(0, 255, 127, 0.5) 35.6%, rgba(255, 243, 82, 0.5) 52.9%, rgba(255, 165, 0, 0.5) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+  background-size: 150% 150%;
+  animation: gr_move15 15s ease infinite;
+  -webkit-animation: gr_move15 15s ease infinite;
+}
+@keyframes gr_move15 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.hero .heading {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 9.6rem;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.hero .scroll_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .scroll_container .scroll {
+  position: absolute;
+  top: 75%;
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(255, 255, 255, 0.75);
+  border-radius: 50%;
+  animation: down 5s infinite;
+  -webkit-animation: down 5s infinite;
+}
+.hero .scroll_container .scroll::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 18px;
+  width: 18px;
+  height: 18px;
+  border-left: 5px solid rgba(255, 255, 255, 0.75);
+  border-bottom: 5px solid rgba(255, 255, 255, 0.75);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+@keyframes down {
+  0% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+  }
+  50% {
+    transform: translateY(15px);
+    -webkit-transform: translateY(15px);
+  }
+  100% {
+    transform: translate(0);
+    -webkit-transform: translate(0);
+  }
+}
+
+main {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+main .wave {
+  position: relative;
+}
+main .wave child {
+  background: #fff;
+}
+main .wave canvas {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+main section {
+  width: 100%;
+  padding: 0 10% 0 10%;
+  margin-bottom: 120px;
+  box-sizing: border-box;
+  text-align: center;
+}
+main section h2 {
+  color: transparent;
+  margin: 0 auto 32px auto;
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgba(0, 255, 127, 0.5) 35.6%, rgba(255, 243, 82, 0.5) 52.9%, rgba(255, 165, 0, 0.5) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+  background-size: 200%;
+  animation: gr_move20 20s ease infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+main section h2 .heading_jp {
+  font-family: "Noto Sans JP", sans-serif, "NoChattering";
+  font-size: 2.4rem;
+  vertical-align: 10px;
+}
+@keyframes gr_move20 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+main .fade-in {
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  -webkit-transition: 1s;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+}
+main .fade-in.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+}
+main #about {
+  padding-top: 120px;
+}
+main #about div p {
+  padding: 0 20%;
+  margin: 0 auto;
+}
+main #about div p span {
+  display: block;
+  text-align: right;
+}
+main #mind #mind_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 0;
+}
+main #mind #mind_list li {
+  width: 50%;
+  margin: 0 auto;
+}
+main #mind #mind_list li h3 {
+  position: relative;
+  font-family: "Noto Sans JP", sans-serif, "NoChattering";
+}
+main #mind #mind_list li h3 span {
+  color: rgba(211, 211, 211, 0.5);
+  font-family: "Josefin Sans", sans-serif, "NoChattering";
+  font-size: 9.6rem;
+  position: absolute;
+  bottom: -1.6rem;
+  left: 0;
+  z-index: -1;
+}
+main #works h3 {
+  position: relative;
+}
+main #works h3::before {
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  content: "";
+  width: 50px;
+  height: 2px;
+  border-radius: 1px;
+  background: #d3d3d3;
+}
+main #works #works_list {
+  width: 70vw;
+  margin: 0 auto 48px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px 32px;
+  padding: 0;
+}
+main #works #works_list li {
+  width: calc(50% - 16px);
+  padding: 0;
+  box-sizing: border-box;
+}
+main #works #works_list li p {
+  text-align: center;
+}
+main #works .slider {
+  display: flex;
+  width: 60vw;
+  padding-top: 16px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+main #works .slider .slide_contents {
+  display: flex;
+  flex-wrap: nowrap;
+  animation: slide 25s linear infinite;
+  padding: 0;
+  margin: 0;
+}
+main #works .slider .slide_contents li {
+  width: 180px;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+main #works .slider .slide_contents li h4, main #works .slider .slide_contents li p {
+  line-height: 125%;
+  padding: 0;
+  margin: 0;
+}
+main #works .slider .slide_contents li p {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+main #works .slider .slide_contents li p span {
+  font-family: "Josefin Sans", sans-serif, "NoChattering";
+  font-size: 1rem;
+  color: #d3d3d3;
+}
+main #works .slider .slide_contents li img {
+  padding: 16px 0;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+}
+main #contact div a {
+  font-family: "Josefin Sans", sans-serif, "NoChattering";
+  color: #4e454a;
+  letter-spacing: 0.05em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  margin: 180px auto 0 auto;
+  background: radial-gradient(circle farthest-corner at 10% 20%, rgb(222, 168, 248) 0%, rgb(168, 222, 248) 21.8%, rgba(0, 255, 127, 0.5) 35.6%, rgba(255, 243, 82, 0.5) 52.9%, rgba(255, 165, 0, 0.5) 66.8%, rgb(248, 172, 172) 90%, rgb(254, 211, 252) 99.7%);
+  background-size: 150% 150%;
+  animation: gr_move20 20s ease infinite;
+  -webkit-animation: gr_move20 20s ease infinite;
+}
+@keyframes gr_move20 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+footer p {
+  margin: 0;
+  line-height: 150%;
+  color: #fff;
+}
+footer p a {
+  color: #fff;
+}
+
+@media screen and (min-width: 599px) {
+  body .only_sp {
+    display: none;
+  }
+}
+@media screen and (max-width: 599px) {
+  body h3, body h4, body p {
+    margin: 1em 0;
+  }
+  body p {
+    text-align: left;
+  }
+  body .only_pc {
+    display: none;
+  }
+  .hero .heading {
+    font-size: 6.4rem;
+    line-height: 150%;
+  }
+  main section {
+    padding: 0 7.5%;
+  }
+  main #about {
+    padding-top: 120px;
+  }
+  main #about div p {
+    padding: 0;
+  }
+  main #mind #mind_list {
+    width: 100%;
+  }
+  main #mind #mind_list li {
+    width: 100%;
+  }
+  main #mind #mind_list li h3::before {
+    top: 1rem;
+    left: 0;
+  }
+  main #works #works_list {
+    width: 100%;
+    gap: 16px;
+  }
+  main #works #works_list li {
+    width: 100%;
+  }
+  main #works .slider {
+    width: 80vw;
+  }
+  main #works .slider ul li p {
+    text-align: center;
+  }
+  main #contact h2, main #contact p {
+    text-align: center;
+  }
+  footer p {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

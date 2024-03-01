@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIKU MATSUDA - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="//font.realtype.jp/api/script/nochattering" id="RT_SCRIPT_NO_CHATTERING" data-rt-timeout="5000"></script>
+</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@700&family=Noto+Sans+JP&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<body>
+
+    <!-- first view -->
+    <section class="hero">
+        <div>
+            <h1 class="heading">
+                MIKU<span class="only_pc">&nbsp;</span><br class="only_sp">MATSUDA
+            </h1>
+        </div>
+        <!-- scroll -->
+        <div class="scroll_container">
+            <div class="scroll"></div>
+        </div>
+    </section>
+
+    <!-- main contents -->
+    <main>
+    
+    <!-- wave -->
+    <div class="wave">
+        <canvas id="waveCanvas" width="100%" height="100"></canvas>
+    </div>
+
+    <!-- About me -->
+    <section id="about" class="fade-in">
+        <div class="heading_gr">
+            <h2>
+                About Me<br class="only_sp">
+                <span class="only_pc heading_jp">／</span>
+                <span class="heading_jp">わたしについて</span>
+            </h2>
+        </div>
+
+        <div>
+        <p>
+            1998年生まれ、青森県出身。大学進学で新潟、就職で仙台へ。<br>
+            <br>
+            大学の講義でHTMLとCSSの勉強をする機会があり、<br class="only_pc">
+            デザインやコーディングに興味を持ちました。<br>
+            <br>
+            最初は、コーディングの勉強から始めたのですが、<br class="only_pc">
+            少しずつサイトらしきものが出来上がっていくことが、すごく楽しかったです。<br>
+            その後、WEBのことをもっと勉強してみたいと思い、<br class="only_pc">
+            デザインやマーケティングについて、オンラインで学びました。<br>
+            <br>
+            卒業後は仙台にある、ECサイトの運用を主に行っている会社に入社。<br>
+            実務対応をしつつ、運用ディレクターとして、約3年間勤めました。
+            <br>
+            <span>松田 美玖</span>
+        </p>
+        </div>
+    </section>
+
+    <section id="mind" class="fade-in">
+        <h2>
+            Mind<br class="only_sp">
+            <span class="only_pc heading_jp">／</span>
+            <span class="heading_jp">心がけていること</span>
+        </h2>
+        <div>
+        <ul id="mind_list">
+            <li>
+                <h3><span>01</span>出来る方法を考える</h3>
+                <p>
+                    クライアント様から、サイトの仕様上<br class="only_pc">
+                    難しいご要望をいただくことがあったのですが、<br class="only_pc">
+                    すぐ出来ないとは言わず、代替案を考え、提案するようにしていました。<br>
+                    自分ひとりで解決できない場合は、<br class="only_pc">
+                    社内のメンバーやパートナーの開発会社さんに相談し、<br class="only_pc">
+                    なるべくご要望に沿えるよう動くことを意識していました。<br>
+                </p>
+            </li>
+            <li>
+                <h3><span>02</span>相手に伝わる言葉を使う</h3>
+                <p>
+                    社内外問わず、相手に伝わりやすい言葉や話し方、<br class="only_pc">
+                    書き方を心がけていました。<br>
+                    特にクライアント様は、サイトの仕様に詳しくない方もおられたため、<br class="only_pc">
+                    内内で使用するような言葉は使わず、<br class="only_pc">
+                    かみ砕いた言い方をするようにしていました。<br>
+                </p>
+            </li>
+            <li>
+                <h3><span>03</span>確認を怠らない</span></h3>
+                <p>
+                    要望の意図を汲みきれていないまま、業務を進行しないよう、<br class="only_pc">
+                    細かいと思うような部分も、意識的に確認をとるようしていました。<br>
+                    確認が甘いまま物事が進んでしまうと、<br class="only_pc">
+                    クライアント様に迷惑がかかってしまうことはもちろん、<br class="only_pc">
+                    リカバリーにも時間がかかってしまうため、<br class="only_pc">
+                    事前の細かな確認を大切にしていました。<br>
+                </p>
+            </li>
+        </ul>
+        </div>
+    </section>
+
+    <!-- works -->
+    <section id="works" class="fade-in">
+        <h2>
+            Works<br class="only_sp">
+            <span class="only_pc heading_jp">／</span>
+            <span class="heading_jp">お仕事について</span>
+        </h2>
+        <div>
+        <ul id="works_list">
+            <li>
+                <h3>ECサイト運用・ディレクション業務</h3>
+                <p>
+                    メインで担当していないクライアント様も含めですが、常時10以上のクライアント様の運用業務に携わってきました。<br>
+                    メルマガ・コンテンツ制作、受注のチェック、レポート作成などを行っていました。<br>
+                    携わってきた業務一覧は、【<a href="./works_detail.pdf" target="_blank">こちら</a>】からご覧いただけます。
+                </p>
+            </li>
+            <li>
+                <h3>メルマガ立ち上げ・運用</h3>
+                <p>
+                    リラクゼーションサロンのメルマガの立ち上げ、運用に携わりました。<br>
+                    使用するメルマガ配信ツールの選定、配信告知のポスター、メルマガ制作・配信設定などを行いました。
+                </p>
+            </li>
+            <li>
+                <h3>サイトリニューアルのデザイン</h3>
+                <p>
+                    某食品業のサイトリニューアルに携わりました。<br>
+                    デザインカンプを2案、サイト内に設置するバナー7点（2案分）を制作しました。<br>
+                </p>
+            </li>
+            <li>
+                <h3>社内制作物</h3>
+                <p>
+                    コーポレートサイトのリニューアル、クリアファイルや名刺のデザインデータの制作・発注など、<br>
+                    社内制作物全般を担当していました。<br>
+                </p>
+            </li>
+        </ul>
+        </div>
+        <!-- slider-->
+        <div>
+        <h3>業務で使用してきたもの</h3>
+        <div class="slider">
+            <ul class="slide_contents">
+                <li>
+                    <h4>HTML<h4>
+                    <img src=".\icon\icons8-html-5.svg" alt="">
+                    <p>ニュース制作<br>メルマガ制作<br><span>and so on<span></p>
+                </li>
+                <li>
+                    <h4>CSS</h4>
+                    <img src=".\icon\icons8-css3.svg" alt="">
+                    <p>ニュース制作<br>メルマガフォーマット制作<br><span>and so on<span></p>
+                </li>
+                <li>
+                    <h4>Excel</h4>
+                    <img src=".\icon\icons8-Excel.svg" alt="">
+                    <p>商品登録<br>レポート作成<br><span>and so on<span></p>
+                </li>
+                <li>
+                    <h4>SpreadSheet</h4>
+                    <img src=".\icon\icons8-spreadsheet.svg" alt="">
+                    <p>業務の進捗管理</p>
+                </li>
+                <li>
+                    <h4>Photoshop</h4>
+                    <img src=".\icon\icons8-adobe-photoshop.svg" alt="">
+                    <p>画像加工<br>バナー制作<br><span>and so on<span></p>
+                </li>
+                <li>
+                    <h4>Illustrator</h4>
+                    <img src=".\icon\icons8-adobe-illustrator.svg" alt="">
+                    <p>名刺データ制作<br>クリアファイルデータ制作</p>
+                </li>
+                <li>
+                    <h4>Xd</h4>
+                    <img src=".\icon\icons8-adobe-xd.svg" alt="">
+                    <p>サイトデザイン案制作</p>
+                </li>
+                <li>
+                    <h4>Google Analitycs</h4>
+                    <img src=".\icon\icons8-GA.svg" alt="">
+                    <p>レポート作成</p>
+                </li>
+            </ul>
+            <ul class="slide_contents">
+                <li>
+                    <h4>HTML<h4>
+                    <img src=".\icon\icons8-html-5.svg" alt="">
+                    <p>ニュース制作<br>メルマガ制作<br><span>and so on<span></p>
+                </li>
+                <li>
+                    <h4>CSS</h4>
+                    <img src=".\icon\icons8-css3.svg" alt="">
+                    <p>ニュース制作<br>メルマガフォーマット制作<br><span>and so on<span></p>
+                </li>
+                <li>
+                    <h4>Excel</h4>
+                    <img src=".\icon\icons8-Excel.svg" alt="">
+                    <p>商品登録<br>レポート作成<br><span>and so on<span></p>
+                </li>
+                <li>
+                    <h4>SpreadSheet</h4>
+                    <img src=".\icon\icons8-spreadsheet.svg" alt="">
+                    <p>業務の進捗管理</p>
+                </li>
+                <li>
+                    <h4>Photoshop</h4>
+                    <img src=".\icon\icons8-adobe-photoshop.svg" alt="">
+                    <p>画像加工<br>バナー制作<br><span>and so on<span></p>
+                </li>
+                <li>
+                    <h4>Illustrator</h4>
+                    <img src=".\icon\icons8-adobe-illustrator.svg" alt="">
+                    <p>名刺データ制作<br>クリアファイルデータ制作</p>
+                </li>
+                <li>
+                    <h4>Xd</h4>
+                    <img src=".\icon\icons8-adobe-xd.svg" alt="">
+                    <p>サイトデザイン案制作</p>
+                </li>
+                <li>
+                    <h4>Google Analitycs</h4>
+                    <img src=".\icon\icons8-GA.svg" alt="">
+                    <p>レポート作成</p>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="fade-in">
+        <h2>
+            Contact<br class="only_sp">
+            <span class="only_pc heading_jp">／</span>
+            <span class="heading_jp">お問い合わせ</span>
+        </h2>
+        <div>
+            <p>
+            <a href="mailto:songtianmeijiu@gmail.com">songtianmeijiu@gmail.com</a><br>
+            メールアドレスをクリックすると、<br class="only_sp">
+            メール画面に遷移します。
+            </p>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <p>
+            <small>
+                Icons by <a href="https://icons8.jp/" target="_blank">Icons8</a>.
+            </small>
+        </p>
+        <p>
+            <small>
+                &copy; 2024 MIKU MATSUDA All Rights Reserved.
+            </small>
+        </p>
+    </footer>
+
+    <script>
+
+    //ウェーブアニメーション
+    var unit = 100,
+    canvasList, // キャンバスの配列
+    info = {}, // 全キャンバス共通の描画情報
+    colorList; // 各キャンバスの色情報
+    
+    function init() {
+        info.seconds = 0;
+        info.t = 0;
+        canvasList = [];
+        colorList = [];
+        // 色
+        canvasList.push(document.getElementById("waveCanvas"));
+        colorList.push(['#fff']);
+
+    // 各キャンバスの初期化
+    　　for(var canvasIndex in canvasList) {
+            var canvas = canvasList[canvasIndex];
+            canvas.width = document.documentElement.clientWidth; //Canvasのwidthをウィンドウの幅に合わせる
+            canvas.height = 100;//波の高さ
+            canvas.contextCache = canvas.getContext("2d");
+        }
+        // 共通の更新処理呼び出し
+            update();
+    }
+    
+    function update() {
+            for(var canvasIndex in canvasList) {
+            var canvas = canvasList[canvasIndex];
+            // 各キャンバスの描画
+            draw(canvas, colorList[canvasIndex]);
+        }
+        // 共通の描画情報の更新
+        info.seconds = info.seconds + .014;
+        info.t = info.seconds*Math.PI;
+        // 自身の再起呼び出し
+        setTimeout(update, 35);
+    }
+    
+    /**
+     * Draw animation function.
+     * 
+     * This function draws one frame of the animation, waits 20ms, and then calls
+     * itself again.
+     */
+    function draw(canvas, color) {
+            // 対象のcanvasのコンテキストを取得
+        var context = canvas.contextCache;
+        // キャンバスの描画をクリア
+        context.clearRect(0, 0, canvas.width, canvas.height);
+    
+        //波を描画 drawWave(canvas, color[数字（波の数を0から数えて指定）], 透過, 波の幅のzoom,波の開始位置の遅れ )
+        drawWave(canvas, color[0], 1, 3, 0);
+    }
+    
+    /**
+    * 波を描画
+    * drawWave(色, 不透明度, 波の幅のzoom, 波の開始位置の遅れ)
+    */
+    function drawWave(canvas, color, alpha, zoom, delay) {
+            var context = canvas.contextCache;
+        context.fillStyle = color;//塗りの色
+        context.globalAlpha = alpha;
+        context.beginPath(); //パスの開始
+        drawSine(canvas, info.t / 1, zoom, delay);
+        context.lineTo(canvas.width + 10, canvas.height); //パスをCanvasの右下へ
+        context.lineTo(0, canvas.height); //パスをCanvasの左下へ
+        context.closePath() //パスを閉じる
+        context.fill(); //波を塗りつぶす
+    }
+    
+    /**
+     * Function to draw sine
+     * 
+     * The sine curve is drawn in 10px segments starting at the origin. 
+     * drawSine(時間, 波の幅のzoom, 波の開始位置の遅れ)
+     */
+    function drawSine(canvas, t, zoom, delay) {
+        var xAxis = Math.floor(canvas.height/2);
+        var yAxis = 0;
+        var context = canvas.contextCache;
+        // Set the initial x and y, starting at 0,0 and translating to the origin on
+        // the canvas.
+        var x = t; //時間を横の位置とする
+        var y = Math.sin(x)/zoom;
+        context.moveTo(yAxis, unit*y+xAxis); //スタート位置にパスを置く
+    
+        // Loop to draw segments (横幅の分、波を描画)
+        for (i = yAxis; i <= canvas.width + 10; i += 10) {
+            x = t+(-yAxis+i)/unit/zoom;
+            y = Math.sin(x - delay)/3;
+            context.lineTo(i, unit*y+xAxis);
+        }
+    }
+    
+    init();
+
+    //スクロールしたら、フェードイン
+    const fade = document.querySelectorAll('.fade-in');
+
+    function fadeInOnScroll() {
+        fade.forEach(fade => {
+            const fadeInPosition = fade.getBoundingClientRect().top;
+            const screenPosition = window.innerHeight / 1.2;
+
+            if(fadeInPosition < screenPosition){
+                fade.classList.add('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', fadeInOnScroll);
+</script>
+
+</body>
+</html>
